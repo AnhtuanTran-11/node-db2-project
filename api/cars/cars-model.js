@@ -16,7 +16,7 @@ const create = (car) => {
   return db("cars")
     .insert(car)
     .then(([id]) => {
-      return getById(id)
+      return getById(id);
     });
 };
 
